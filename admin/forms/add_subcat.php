@@ -6,8 +6,8 @@ include('../includes/navbar.php');
 include('../includes/sidebar.php');
 
 if(isset($_POST['submit'])){
-   echo $sub_cat_title= $_POST['sub_cat_title'];
-   echo $cat_parent= $_POST['cat_parent'];
+    $sub_cat_title= $_POST['sub_cat_title'];
+    $cat_parent= $_POST['cat_parent'];
     $cat_products=0;
     $show_in_header=0;
     $show_in_footer=0;
