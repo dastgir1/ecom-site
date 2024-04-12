@@ -8,14 +8,16 @@ include('../includes/sidebar.php');
 if(isset($_POST['submit'])){
    echo $sub_cat_title= $_POST['sub_cat_title'];
    echo $cat_parent= $_POST['cat_parent'];
-    // $products=0;
-    // $record=mysqli_query($conn,"INSERT INTO sub_categories(sub_cat_title,cat_parent,products) VALUES('$sub_cat_title','$cat_title',$products)");
-    // if($record){
-    //     echo '<div class="alert alert-success"> Category added successfully.</div>';
-    //     header('location: http://localhost/eccoo/admin/categories.php');
-    // }else{
-    //     echo '<div class="alert alert-warning"> !Oops some thing went wrong category not added</div>';
-    // }
+    $cat_products=0;
+    $show_in_header=0;
+    $show_in_footer=0;
+    $record=mysqli_query($conn,"INSERT INTO sub_categories(sub_cat_title,cat_parent,cat_products,show_in_header,show_in_footer) VALUES('$sub_cat_title','$cat_parent',$cat_products,$show_in_header,$show_in_footer)");
+    if($record){
+        echo '<div class="alert alert-success"> Category added successfully.</div>';
+        header('location: http://localhost/eccoo/admin/sub_categories.php');
+    }else{
+        echo '<div class="alert alert-warning"> !Oops some thing went wrong category not added</div>';
+    }
 }
 
 ?>
