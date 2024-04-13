@@ -20,7 +20,7 @@
             <li><hr class="divider"></li>
             <li class="nav-item mx-3"><a class="nav-link" href=""><strong>Orders</strong></a></li>
             <li><hr class="divider"></li>
-            <li class="nav-item mx-3"><a class="nav-link" href=""><strong>Users</strong></a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="users.php"><strong>Users</strong></a></li>
             <li><hr class="divider"></li>
             <li class="nav-item mx-3"><a class="nav-link" href=""><strong>Options</strong></a></li>
             <li><hr class="divider"></li>
