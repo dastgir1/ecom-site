@@ -6,7 +6,7 @@ include('includes/sidebar.php');
 
 ?>
 <div class="container ">
-    <div class="row  mt-5 justify-content-center">
+    <div class="row  mt-5  justify-content-center">
         <div class="col">
             <h3 style="display: inline;">All Sub-Categories</h3>
         </div>
